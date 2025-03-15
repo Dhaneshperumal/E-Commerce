@@ -13,12 +13,13 @@ import Training from './components/Training';
 import SignUp from './components/signup';
 import LogIn from './components/login';
 import Home from './components/home';
+import Checkout from './components/Checkout';
 
 
 const App = () => {
   return (
     <Router>
-      {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <div className="collapse navbar-collapse">
             <div className="navbar-nav">
@@ -28,11 +29,12 @@ const App = () => {
               <Link className="nav-link" to="/Specialty">Specialty</Link>
               <Link className="nav-link" to="/Revolver">Revolver</Link>
               <Link className="nav-link" to="/Tactical">Tactical</Link>
-              <Link className="nav-link" to="/Training">Training</Link>
+              <Link className="nav-link" to="/Training">Training</Link> 
+              <Link className="nav-link" to="/Checkout">Checkout</Link>            
             </div>
           </div>
         </div>
-      </nav> */}
+      </nav>  
 
       <div className="container mt-4">
         <Routes>
@@ -46,6 +48,7 @@ const App = () => {
           <Route path="/Revolver" element={<Revolver />} />
           <Route path="/Tactical" element={<Tactical />} />
           <Route path="/Training" element={<Training />} />
+          <Route path="/Checkout" element={<Checkout/>} />
         </Routes>
       </div>
     </Router>

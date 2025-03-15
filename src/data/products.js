@@ -207,11 +207,14 @@ const products = [
             name: "12 Gauge Birdshot", 
             price: 14.99, 
             category: "shotgun",
-            description: "12 Gauge birdshot for Remington 870." },
+            image: "12_Gauge_Birdshot.jpg",
+            description: "12 Gauge birdshot for Remington 870." 
+        },
         {   id: 902, 
             name: "12 Gauge Buckshot", 
             price: 19.99, 
             category: "shotgun",
+            image: "12_Gauge_Buckshot.jpg",
             description: "12 Gauge buckshot for Remington 870." },
 
         {
@@ -227,7 +230,7 @@ const products = [
             name: "12 Gauge Birdshot", 
             price: 14.99,
             category:"shotgun",
-            image: "12g_birdshot.jpg",
+            image: "12_Gauge_Birdshot.jpg",
             description: "12 Gauge birdshot for Mossberg 500."
         },
         { 
@@ -235,7 +238,7 @@ const products = [
             name: "12 Gauge Buckshot", 
             price: 19.99, 
             category:"shotgun",
-            image: "12g_buckshot.jpg",
+            image: "12_Gauge_Buckshot.jpg",
             description: "12 Gauge buckshot for Mossberg 500."
         },
 
@@ -252,7 +255,7 @@ const products = [
             name: "12 Gauge Birdshot", 
             price: 14.99,
             category: "shotgun",
-            image: "12g_birdshot.jpg",
+            image: "12_Gauge_Birdshot.jpg",
             description: "12 Gauge birdshot for Benelli M4."
         },
         { 
@@ -260,7 +263,7 @@ const products = [
             name: "12 Gauge Buckshot", 
             price: 19.99, 
             category: "shotgun",
-            image: "12g_buckshot.jpg",
+            image: "12_Gauge_Buckshot.jpg",
             description: "12 Gauge buckshot for Benelli M4."
         },
 
@@ -277,7 +280,7 @@ const products = [
             name: "12 Gauge Birdshot", 
             price: 14.99,  
             category: "shotgun",
-            image: "12g_birdshot.jpg",
+            image: "12_Gauge_Birdshot.jpg",
             description: "12 Gauge birdshot for Winchester SXP."
         },
         { 
@@ -285,7 +288,7 @@ const products = [
             name: "12 Gauge Buckshot", 
             price: 19.99,  
             category: "shotgun",
-            image: "12g_buckshot.jpg",
+            image: "12_Gauge_Buckshot.jpg",
             description: "12 Gauge buckshot for Winchester SXP." 
         },
     

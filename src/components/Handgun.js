@@ -69,6 +69,9 @@ const Handgun = () => {
           {product.id === 1 && (
               <span className="badge bg-success position-absolute" style={{ top: '10px', left: '10px', zIndex: 1 }}>New Arrival</span>
             )}
+          {product.id === 3 && (
+              <span className="badge bg-success position-absolute" style={{ top: '10px', left: '10px', zIndex: 1 }}>Top rated</span>
+            )}
               {/* <span className="badge bg-success position-absolute" style={{ top: '10px', left: '10px', zIndex: 1 }}>New Arrival</span> */}
             <img 
               src={`${process.env.PUBLIC_URL}/images/${product.image}`} 
@@ -78,12 +81,12 @@ const Handgun = () => {
             />
             
             <div className="card-body">
-              {product.id === 3 && (
-                  <span className="badge bg-success">Top rated</span> 
-              )}
+              {/* {product.id === 3 && (
+                  // <span className="badge bg-success">Top rated</span> 
+              )} */}
               <h5 className="card-title">{product.name}</h5>
 
-              {product.id === 1&& (
+              {product.id === 1 && (
                 <Button variant="danger">-45%</Button>
               )}
               
