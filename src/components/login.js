@@ -39,11 +39,15 @@ const LogIn = () => {
 
   useEffect(() => {
     if (showLogin) {
-        document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     } else {
-        document.body.style.overflow = "auto"; // Enable scrolling when login is closed
+      document.body.style.overflow = 'auto';
     }
-}, [showLogin]);
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [showLogin]);
 
   return (
     <div style={{

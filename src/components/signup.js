@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import {  useNavigate } from 'react-router-dom';
 import CloseButton from 'react-bootstrap/CloseButton';
@@ -47,6 +47,18 @@ const SignUp = () => {
         setShowSignUp(false);
         navigate('/');
       };
+
+  useEffect(() => {
+    if (setShowSignUp) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [setShowSignUp]);
 
   return (
     <div style={{
