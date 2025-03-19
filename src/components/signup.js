@@ -53,7 +53,7 @@ const SignUp = () => {
       backgroundImage: `url("${process.env.PUBLIC_URL}/loginbg2.jpg")`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      height: "100vh",
+      height: "90vh",
       width: "100vw",
     }}>
     
